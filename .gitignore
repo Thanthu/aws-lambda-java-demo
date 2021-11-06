@@ -20,3 +20,4 @@ target/
 ### SAM ###
 .aws-sam
 samconfig.toml
+/HelloWorldFunction/target
