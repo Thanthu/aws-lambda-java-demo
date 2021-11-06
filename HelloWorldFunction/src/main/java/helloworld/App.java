@@ -2,8 +2,8 @@ package helloworld;
 
 public class App {
 
-	public String hello() {
-		return "Hello from Lamda!";
+	public String hello(String name) {
+		return "Hello "  + name + " from Lamda!";
 	}
 	
 }
