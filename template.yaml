@@ -39,3 +39,10 @@ Resources:
       Handler: helloworld.App::printMap
       Runtime: java11
       MemorySize: 512
+  GetClinicalDataFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: HelloWorldFunction
+      Handler: helloworld.App::getClinicalData
+      Runtime: java11
+      MemorySize: 512
