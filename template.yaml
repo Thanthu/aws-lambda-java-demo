@@ -48,3 +48,4 @@ Resources:
       Handler: helloworld.App::getOutput
       Runtime: java11
       MemorySize: 512
+      Timeout: 6

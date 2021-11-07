@@ -46,7 +46,8 @@ public class App {
 		return new ClinicalData("Normal", "Normal");
 	}
 
-	public void getOutput(InputStream in, OutputStream out) throws IOException {
+	public void getOutput(InputStream in, OutputStream out) throws IOException, InterruptedException {
+		Thread.sleep(4000);
 		int data;
 		while ((data = in.read()) != -1) {
 			out.write(Character.toLowerCase(data));
