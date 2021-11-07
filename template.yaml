@@ -32,3 +32,10 @@ Resources:
       Handler: helloworld.App::getScores
       Runtime: java11
       MemorySize: 512
+  PrintMapFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: HelloWorldFunction
+      Handler: helloworld.App::printMap
+      Runtime: java11
+      MemorySize: 512

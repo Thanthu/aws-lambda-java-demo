@@ -31,4 +31,8 @@ public class App {
 		return results;
 	}
 	
+	public void printMap(Map<String, Integer> map) {
+		System.out.println(map);
+	}
+	
 }
