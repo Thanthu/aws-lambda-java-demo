@@ -25,3 +25,10 @@ Resources:
       Handler: helloworld.App::getNumber
       Runtime: java11
       MemorySize: 512
+  GetScoresFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: HelloWorldFunction
+      Handler: helloworld.App::getScores
+      Runtime: java11
+      MemorySize: 512
