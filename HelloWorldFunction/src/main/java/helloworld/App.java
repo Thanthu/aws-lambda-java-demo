@@ -8,6 +8,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.amazonaws.services.lambda.runtime.Context;
+
 import helloworld.dto.ClinicalData;
 import helloworld.dto.Patient;
 
@@ -46,7 +48,8 @@ public class App {
 		return new ClinicalData("Normal", "Normal");
 	}
 
-	public void getOutput(InputStream in, OutputStream out) throws IOException, InterruptedException {
+	public void getOutput(InputStream in, OutputStream out, Context context) throws IOException, InterruptedException {
+		System.out.println(context.getRemainingTimeInMillis());
 		Thread.sleep(4000);
 		int data;
 		while ((data = in.read()) != -1) {
