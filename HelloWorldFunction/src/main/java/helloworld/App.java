@@ -6,4 +6,8 @@ public class App {
 		return "Hello "  + name + " from Lamda!";
 	}
 	
+	public int getNumber(float num) {
+		return (int) num;
+	}
+	
 }
