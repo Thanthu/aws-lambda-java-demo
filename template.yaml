@@ -46,3 +46,10 @@ Resources:
       Handler: helloworld.App::getClinicalData
       Runtime: java11
       MemorySize: 512
+  GetOutputFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: HelloWorldFunction
+      Handler: helloworld.App::getOutput
+      Runtime: java11
+      MemorySize: 512
