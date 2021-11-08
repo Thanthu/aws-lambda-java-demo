@@ -49,3 +49,13 @@ Resources:
       Runtime: java11
       MemorySize: 512
       Timeout: 6
+  GetEnvironmentFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: HelloWorldFunction
+      Handler: helloworld.App::getEnvironment
+      Runtime: java11
+      MemorySize: 512
+      Environment:
+        Variables:
+            myvar: test environment variable

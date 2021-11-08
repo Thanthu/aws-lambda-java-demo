@@ -56,5 +56,9 @@ public class App {
 			out.write(Character.toLowerCase(data));
 		}
 	}
+	
+	public String getEnvironment() {
+		return System.getenv("myvar");
+	}
 
 }
